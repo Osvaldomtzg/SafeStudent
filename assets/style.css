@@ -17,32 +17,43 @@
     display: grid;
     justify-items: center;
     align-items: center;
-    grid-template-rows: 5% 25% 30% 40%;
+    grid-template-rows: 15% 20% 22% 48%;
     height: 100%;
 }
 
 .header{
-    display: flex;
     width: 100%;
+    text-align: center;
 }
 
 .logo > img {
     width: 300px;
 }
 
-.header .selectionUser:first-child{
-    border-right: 1px solid;
-}
-
 .selectionUser{
-    width: 50%;
+    width: 30%;
     height: 100%;
     background-color: transparent;
     border:0px solid;
-    padding: 3% 0px;
-    font-size: 18px;
+    border-radius: 30px;
+    padding: 14px;
+    font-size: 12px;
+    background-color: transparent;
+    color: black;
+}
+
+.padre{
     background-color: #312783;
     color: white;
+}
+
+.institucion{
+    background-color: #312783;
+    color: white;
+}
+
+.option{
+    color: #312783;
 }
 
 .form{
@@ -53,10 +64,6 @@
     width: 100%;
     height: 100%;
     padding: 0px 20px;
-}
-
-.form > h1{
-    text-align: center;
 }
 
 .form input{
@@ -83,7 +90,7 @@
     flex-direction: column;
     align-items: center;
     font-size: 14px;
-    padding: 20px;
+    padding: 0px 20px;
     text-align: justify;
     line-height: 22px;
 }
