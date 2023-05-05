@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
 
 
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
 .container{
@@ -16,12 +17,17 @@
     display: grid;
     justify-items: center;
     align-items: center;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 5% 25% 30% 40%;
+    height: 100%;
 }
 
 .header{
     display: flex;
     width: 100%;
+}
+
+.logo > img {
+    width: 300px;
 }
 
 .header .selectionUser:first-child{
@@ -30,12 +36,12 @@
 
 .selectionUser{
     width: 50%;
+    height: 100%;
     background-color: transparent;
     border:0px solid;
-    padding: 8% 0px;
-    font-family: 'Oswald', sans-serif;
+    padding: 3% 0px;
     font-size: 18px;
-    background-color: #ab49cc;
+    background-color: #312783;
     color: white;
 }
 
@@ -51,24 +57,34 @@
 
 .form > h1{
     text-align: center;
-    font-family: 'Oswald', sans-serif;
 }
 
 .form input{
     font-size: 14px;
     padding: 10px;
-}
-
-.form button {
-    height: 40px;
-    background-color: #636363;
-    border: 0px;
+    border: 1px solid #312783;
     border-radius: 10px;
-    font-family: 'Oswald', sans-serif;
-    color: white;
 }
 
-.footer{
+.form .loginBtn {
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.form .loginBtn:active{
+    background-color: #958be4;
+}
+
+.bienvenida{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
     padding: 20px;
     text-align: justify;
+    line-height: 22px;
 }
+
