@@ -8,11 +8,14 @@
     font-family: 'Inter', sans-serif;
 }
 
-body{
+/* ESTILOS PARA LOGIN */
+
+.loginBody{
     background-image: url(https://www.pngall.com/wp-content/uploads/8/Student-PNG-Image-File.png);
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: contain;
+    background-color: #f6f8fa;
 }
 
 .container{
@@ -31,6 +34,11 @@ body{
 .header{
     width: 100%;
     text-align: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
 }
 
 .logo > img {
@@ -106,4 +114,225 @@ body{
     background-color: rgba(125, 99, 197, 0.1);
     border-radius: 20px;
 }
+
+/* ESTILOS PARA HOMESTUDENT */
+
+.containerHome{
+    width: 100%;
+    height: 100%;
+}
+
+.bodyHome{
+    background-color: #f6f8fa;
+}
+
+.home{
+    display: grid;
+    align-items: center;
+    grid-template-rows: 20% 20% 20% 20% 20;
+    width: 100%;
+    height: 100%;
+    padding: 20px 20px;
+}
+
+.logoHomeStudent img{
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.headerInfo{
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    background-color:#f6f8fa;
+    border-radius: 10px;
+    border: 1px solid #d8e0e9;
+}
+
+.fotoynombre{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.fotoynombre img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.fotoynombre h1{
+    padding: 0px 20px;
+    font-size: 24px;
+}
+
+.infoAlumno{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: 50% 50%;
+    margin-top: 20px;
+}
+
+.infoAlumno .infoTitle{
+    font-weight: bold;
+}
+
+.news{
+    margin-top: 10px;
+    border: 1px solid #d8e0e9;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.reporte{
+    color: red;
+}
+
+.titulo{
+    color: #333;
+    font-size: 12px;
+    border-bottom: 1px solid #dee2e7;
+    padding-bottom: 10px;
+}
+
+details { 
+    background-color: #f6f8fa;
+    width: 100%;
+    margin-bottom: 1rem; 
+    margin-top: 10px;  
+    border-radius: 8px;  
+    border: 1px solid #d8e0e9;
+    color: #333;
+    position: relative;  
+  }
+  details summary {  
+    font-weight: 400;
+    font-size: 14px;
+    padding: 1rem;
+    cursor: pointer;
+    list-style: none;
+  }
+  details p {
+    padding: 1rem;
+    margin: 0 1rem 1rem 1rem;
+    background: #f6f8fa;
+    border-left: 2px solid #364f6b;
+    text-align: justify;
+  }
+  
+  details[open] {
+    box-shadow: 5px 5px 15px #d9d9d9;
+  }
+  
+  details[open] {
+    background: #ffffff;
+  }
+  
+  details[open] summary {
+    font-weight: 600;
+  }
+  
+  details summary::before {
+    position: absolute;
+      content: "↓";    
+      font-size: 1.75rem;
+      top: 10px;
+      right: 16px;  
+  }
+
+  .entradasysalidas{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #d8e0e9;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+
+  .entradasysalidas .fecha{
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .infoEntradasySalidas{
+    display: flex;
+    margin-top: 20px;
+    padding: 0px 20px;
+    padding-bottom: 15px;
+  }
+
+  .infoEntradasySalidas .tituloCheck{
+    display: grid;
+    grid-template-columns: 78% 22%;
+  }
+
+  .entrada, .salidas{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .entrada p, .salida p{
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .tituloCheck img{
+    width: 100%;
+    padding-right: 15px;
+  }
+  
+.historialDiv{
+    display: flex;
+    padding-top: 5px;
+    justify-content: center;
+    border-top: 1px solid #dee2e7;
+}
+
+  .historial{
+    color: #312783;
+    text-decoration: none;
+  }
+
+  .historialAcademico{
+    border: 1px solid #d8e0e9;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+
+  .historialAcademico .boletas{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .historialAcademico .boletas a {
+    padding: 5px 15px;
+    text-decoration: none;
+  }
+
+  .historialAcademico .boletas a::after{
+    content: url(https://www.compart.com/en/unicode/images/icon/document-link-icon.svg);
+    margin-left: 5px;
+  }
+
+  details[open] summary::before {
+    -webkit-animation: rotate 0.6s ease-in-out both;
+            animation: rotate-emoji 0.6s ease-in-out both;
+  }
+  
+  @-webkit-keyframes rotate-emoji {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg);
+    }
+  }
 
