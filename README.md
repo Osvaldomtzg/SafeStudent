@@ -4,6 +4,8 @@
 ![JavaScript](https://img.shields.io/badge/language-JavaScript-yellow.svg)
 ![Node.js](https://img.shields.io/badge/language-Node.js-green.svg)
 
+<img src="https://github.com/Osvaldomtzg/SafeStudent/blob/main/assets/images/SafeStudentScude.png" width="300">
+
 SafeStudent es una aplicación diseñada para ayudar a las instituciones educativas a controlar las entradas y salidas de sus alumnos. Esta aplicación también notifica a los padres o tutores cuando un estudiante ingresa o sale de la escuela, proporciona información académica y envía noticias importantes a los padres. SafeStudent es una herramienta eficaz y fácil de usar que ayuda a mantener a los padres informados sobre el progreso de sus hijos en la escuela.
 
 ## Características
