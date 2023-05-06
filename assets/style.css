@@ -191,6 +191,11 @@
     color: red;
 }
 
+.reporte p{
+    border-left: 2px solid red;
+    color: black;
+}
+
 .titulo{
     color: #333;
     font-size: 12px;
