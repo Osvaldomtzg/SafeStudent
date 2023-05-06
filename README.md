@@ -1,4 +1,4 @@
-# SafeStudent
+# 🛡 SafeStudent 
 
 ![SafeStudent Version 0.1](https://img.shields.io/badge/version-0.1-brightgreen.svg)
 ![JavaScript](https://img.shields.io/badge/language-JavaScript-yellow.svg)
