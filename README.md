@@ -15,7 +15,7 @@ SafeStudent cuenta con las siguientes características:
 - Recepción de noticias importantes de la escuela
 - Interfaz de usuario intuitiva y fácil de usar
 
-# SafeStudent 🚫
+## SafeStudent 🚫
 
 Lamentablemente, SafeStudent aún no está disponible para su uso público. Nos encontramos trabajando arduamente para brindarles una versión estable lo antes posible. ¡Manténganse al tanto de las actualizaciones! 🚧
 
