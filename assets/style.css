@@ -21,6 +21,7 @@
 .container{
     width: 100%;
     height: 100vh;
+    padding: 0px;
 }
 
 .login{
@@ -173,7 +174,7 @@
     justify-items: center;
     grid-template-columns: 30% 30% 40%;
     grid-template-rows: 50% 50%;
-    margin-top: 20px;
+    margin: 20px 0 20px 0;
 }
 
 .infoAlumno .infoTitle{
@@ -187,13 +188,17 @@
     border-radius: 10px;
 }
 
-.reporte{
+.noticias{
+  margin-top: 10px;
+}
+
+.reporte summary{
     color: red;
 }
 
 .reporte p{
     border-left: 2px solid red;
-    color: black;
+    color: #333;
 }
 
 .titulo{
@@ -203,44 +208,50 @@
     padding-bottom: 10px;
 }
 
-details { 
+.detailHomeStudent { 
     background-color: #f6f8fa;
     width: 100%;
-    margin-bottom: 1rem; 
-    margin-top: 10px;  
+    margin-bottom: 10px; 
     border-radius: 8px;  
     border: 1px solid #d8e0e9;
     color: #333;
     position: relative;  
   }
-  details summary {  
+  .detailHomeStudent summary {  
     font-weight: 400;
     font-size: 14px;
-    padding: 1rem;
+    padding: 15px;
     cursor: pointer;
     list-style: none;
   }
-  details p {
+  details p{
     padding: 1rem;
     margin: 0 1rem 1rem 1rem;
     background: #f6f8fa;
     border-left: 2px solid #364f6b;
     text-align: justify;
   }
-  
-  details[open] {
-    box-shadow: 5px 5px 15px #d9d9d9;
+
+  details iframe {
+    margin: 0 1rem 1rem 1rem;
+    background: #f6f8fa;
   }
   
   details[open] {
+    box-shadow: 5px 5px 15px #d9d9d9;
     background: #ffffff;
   }
   
   details[open] summary {
     font-weight: 600;
   }
+
+  details[open] summary {
+    font-weight: 600;
+    padding: 10px 10px;
+  }
   
-  details summary::before {
+  .detailHomeStudent summary::before {
     position: absolute;
       content: "↓";    
       font-size: 1.75rem;
@@ -335,4 +346,103 @@ details {
               transform: rotate(180deg);
     }
   }
+
+/* HISTORIALES ESTILOS */
+
+.historiales{
+  width: 100%;
+  height: 100%;
+}
+
+.historialPage{
+  margin: 20px 20px;
+  padding: 20px 20px;
+  border: 1px solid #dee2e7;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.historialPage .tituloHistorial{
+  display: flex;
+  justify-content: center;
+}
+
+.historialPage h4{
+  margin-top: 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.buscador{
+  display: grid;
+  grid-template-columns: 80% 20%;
+  justify-content: space-between;
+  padding-top: 15px;
+  border-top: 1px solid #dee2e7;
+}
+
+.actionButton{
+  padding: 5px;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #dee2e7;
+  border-radius: 5px;
+  color: #312783;
+  text-decoration: none;
+}
+
+.solosinregistro{
+  padding-top: 10px;
+}
+
+.solosinregistro input{
+  color: red;
+}
+
+.backButton{
+  display: flex;
+  justify-content: center;
+  border-color: transparent;
+  padding-top: 0px;
+}
+
+.backButton input{
+  padding: 8px;
+}
+
+.actionButton:active{
+  background-color: #dee2e7;
+}
+
+.form-group{
+  margin-bottom: 0px;
+}
+
+.col-sm-6{
+  padding-left: 0px;
+}
+
+.historialDetails{
+  padding-top: 20px;
+  overflow: hidden;
+}
+
+.boletapdf[open]::before {
+  position: absolute;
+  content: "↑";
+  font-weight: 600;
+  margin-left: 65%;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+
+.sinregistro{
+  color: red;
+}
+
+.table tbody tr td .actionButton{
+  padding: 0px;
+}
+
+
 
