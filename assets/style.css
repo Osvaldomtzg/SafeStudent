@@ -37,6 +37,10 @@
     text-align: center;
 }
 
+.header a, .header button{
+  cursor: pointer;
+}
+
 .logo{
     display: flex;
     justify-content: center;
@@ -130,7 +134,7 @@
 .home{
     display: grid;
     align-items: center;
-    grid-template-rows: 20% 20% 20% 20% 20;
+    grid-template-rows: 10% 20% 20% 20%;
     width: 100%;
     height: 100%;
     padding: 20px 20px;
@@ -182,14 +186,14 @@
 }
 
 .news{
-    margin-top: 10px;
+    margin-top: 20px;
     border: 1px solid #d8e0e9;
     padding: 10px;
     border-radius: 10px;
 }
 
 .noticias{
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .reporte summary{
@@ -208,7 +212,43 @@
     padding-bottom: 10px;
 }
 
-.detailHomeStudent { 
+  .entradasysalidas{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #d8e0e9;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 40px;
+  }
+
+  .entradasysalidas .fecha{
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .infoEntradasySalidas{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    padding-bottom: 15px;
+  }
+
+  .infoEntradasySalidas .tituloCheck{
+    display: grid;
+    grid-template-columns: 40% 50% 10%;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .salida{
+    margin-top: 15px;
+  }
+
+  .tituloCheck img{
+    width: 70%;
+  }
+
+  .detailHomeStudent { 
     background-color: #f6f8fa;
     width: 100%;
     margin-bottom: 10px; 
@@ -258,42 +298,6 @@
       top: 10px;
       right: 16px;  
   }
-
-  .entradasysalidas{
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #d8e0e9;
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 10px;
-  }
-
-  .entradasysalidas .fecha{
-    margin-top: 10px;
-    text-align: center;
-  }
-
-  .infoEntradasySalidas{
-    display: flex;
-    flex-direction: column;
-    padding: 20px 20px;
-    padding-bottom: 15px;
-  }
-
-  .infoEntradasySalidas .tituloCheck{
-    display: grid;
-    grid-template-columns: 40% 50% 10%;
-    align-items: center;
-    justify-items: center;
-  }
-
-  .salida{
-    margin-top: 15px;
-  }
-
-  .tituloCheck img{
-    width: 70%;
-  }
   
 .historialDiv{
     display: flex;
@@ -311,7 +315,7 @@
     border: 1px solid #d8e0e9;
     padding: 10px;
     border-radius: 10px;
-    margin-top: 10px;
+    margin-top: 40px;
   }
 
   .historialAcademico .boletas{
@@ -444,5 +448,91 @@
   padding: 0px;
 }
 
+/* HOME INSTITUTO */
 
+.optionsBtn{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+  border: 1px solid #dee2e7;
+  border-radius: 10px;
+}
 
+.optionsBtn a{
+  text-align: center;
+  max-width: 100%;
+  max-height: 100%;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 25px;
+  padding: 40px;
+}
+
+.optionsBtn a:last-child{
+  color: red;
+}
+
+.optionsBtn a:first-child{
+  border-right: 1px solid #dee2e7;
+}
+
+.optionsBtn a img{
+  width: 10%;
+}
+
+@media (min-width: 768px) {
+  .logoHomeStudent img{
+    width: 10%;
+    margin-bottom: 20px;
+  }
+  .headerInfo {
+    display:grid;
+    grid-template-columns: 30% 70%;
+  }
+  .fotoynombre picture img{
+    width: 50%;
+  }
+
+  .home{
+    grid-template-rows: 20% 5% 80% 5%;
+  }
+
+  .message{
+    padding: 20px;
+    border: 1px solid #dee2e7;
+    border-radius: 10px;
+  }
+
+ .textarea{
+    width: 100%;
+    height: 400px;
+    resize: none;
+    border: 1px solid #dee2e7;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .textarea:focus{
+    outline: 0;
+  }
+  
+  .login{
+    width: 1000px;
+    
+  }
+
+  .container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+  }
+  .loginBody{
+    background-image: url(/assets/images/FontWeb.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
+}
