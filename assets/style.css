@@ -95,6 +95,7 @@
 
 .form .loginBtn {
     height: 40px;
+    width: 100%;
     background-color: transparent;
     border: 1px solid;
     border-radius: 10px;
@@ -351,6 +352,7 @@
     }
   }
 
+
 /* HISTORIALES ESTILOS */
 
 .historiales{
@@ -533,6 +535,14 @@
     background-image: url(/assets/images/FontWeb.png);
     background-repeat: no-repeat;
     background-position: bottom right;
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    select:focus,
+    textarea:focus,
+    input:focus {
+      font-size: 16px;
+    }
   }
 
 }

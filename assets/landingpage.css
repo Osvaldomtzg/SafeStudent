@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.container{
+    padding: 20px;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.header img{
+    width: 50%;
+}
+
+.nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 15px;
+    color: #333;
+}
+
+.nosotros h1{
+    margin-bottom: 30px;
+    font-size: 26px;
+    color: rgb(12, 12, 12);
+}
+
+.nosotros article{
+    text-align: justify;
+    line-height: 26px;
+}
+
+.ventajas .nosotros{
+    margin-bottom: 30px;
+}
+
+.btn {
+    width: 40%;
+    background-color: #241a70;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    border-radius: 10px;
+    border: 0px;
+    padding: 10px 2px;
+    box-shadow: 0 5px 11px rgba(78,56,164,.29);
+}
+
+.ingresar{
+    background-color: transparent;
+    color: #241a70;
+    border: 1px solid #241a70;
+    box-shadow: none;
+}
+
+.actionBtn{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    padding: 0px 30px 0px 30px;
+}
+
+.ejemplo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.ejemplo img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.ventajas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.ventajas .v1 {
+    background-color: #241a70;
+    color: #eaeaec;
+    font-weight: 100;
+}
+
+.ventajas .v1 h1 {
+    color: #eaeaec;
+}
+
+.ventajas .v1 img{
+    width: 25%;
+    margin-bottom: 20px;
+}
+
+.ventajas .instituto{
+    background-color: #241a70;
+}
