@@ -8,6 +8,20 @@
     font-family: 'Inter', sans-serif;
 }
 
+body .containerHome h1, body h2 {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+body h4 {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+body p {
+  margin-bottom: 0;
+}
+
 /* ESTILOS PARA LOGIN */
 
 .loginBody{
@@ -135,7 +149,7 @@
 .home{
     display: grid;
     align-items: center;
-    grid-template-rows: 10% 20% 20% 20%;
+    grid-template-rows: .1fr .1fr .1fr .1fr .5fr;
     width: 100%;
     height: 100%;
     padding: 20px 20px;
@@ -157,22 +171,34 @@
     border: 1px solid #d8e0e9;
 }
 
+.fotoynombreStudent{
+  display: grid;
+  grid-template-columns: 25% 75%;
+  align-items: center;
+}
+
+.fotoynombreStudent img{
+  width: 100%;
+  border-radius: 10px;
+}
+
 .fotoynombre{
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
     align-items: center;
-    justify-content: space-around;
+}
+
+.fotoynombreStudent h1{
+  padding: 0px 20px;
+  font-size: 24px;
 }
 
 .fotoynombre img{
-    width: 100%;
+    width: 60%;
     border-radius: 10px;
 }
 
-.fotoynombre h1{
-    padding: 0px 20px;
-    font-size: 24px;
-}
 
 .infoAlumno{
     display: grid;
@@ -186,7 +212,7 @@
     font-weight: bold;
 }
 
-.news{
+.expandibles{
     margin-top: 20px;
     border: 1px solid #d8e0e9;
     padding: 10px;
@@ -206,6 +232,15 @@
     color: #333;
 }
 
+.bienvenidaApp summary{
+  color: green;
+}
+
+.bienvenidaApp p{
+  border-left: 2px solid green;
+  color: #333;
+}
+
 .titulo{
     color: #333;
     font-size: 12px;
@@ -219,7 +254,7 @@
     border: 1px solid #d8e0e9;
     padding: 10px;
     border-radius: 10px;
-    margin-top: 40px;
+    margin-top: 20px;
   }
 
   .entradasysalidas .fecha{
@@ -238,7 +273,6 @@
     display: grid;
     grid-template-columns: 40% 50% 10%;
     align-items: center;
-    justify-items: center;
   }
 
   .salida{
@@ -247,6 +281,10 @@
 
   .tituloCheck img{
     width: 70%;
+  }
+
+  .tituloCheck h4{
+    margin-bottom: 0;
   }
 
   .detailHomeStudent { 
@@ -264,6 +302,7 @@
     padding: 15px;
     cursor: pointer;
     list-style: none;
+    width: 90%;
   }
   details p{
     padding: 1rem;
@@ -296,7 +335,7 @@
     position: absolute;
       content: "↓";    
       font-size: 1.75rem;
-      top: 10px;
+      top: 5px;
       right: 16px;  
   }
   
@@ -312,26 +351,18 @@
     text-decoration: none;
   }
 
-  .historialAcademico{
-    border: 1px solid #d8e0e9;
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 40px;
-  }
-
-  .historialAcademico .boletas{
+  .expandibles .cajones{
     display: flex;
     flex-direction: column;
     margin-top: 10px;
-    padding-bottom: 10px;
   }
 
-  .historialAcademico .boletas a {
+  .expandibles .cajones a {
     padding: 5px 15px;
-    text-decoration: none;
+    text-decoration: none;  
   }
 
-  .historialAcademico .boletas a::after{
+  .expandibles .cajones a::after{
     content: url(https://www.compart.com/en/unicode/images/icon/document-link-icon.svg);
     margin-left: 5px;
   }
@@ -379,11 +410,23 @@
 }
 
 .buscador{
+
+  padding-top: 15px;
+  border-top: 1px solid #dee2e7;
+}
+
+.buscador form{
   display: grid;
   grid-template-columns: 80% 20%;
   justify-content: space-between;
-  padding-top: 15px;
-  border-top: 1px solid #dee2e7;
+}
+
+.buscador .col-sm-6{
+  padding-left: 0px;
+}
+
+.buscador .col-sm-6 .form-group {
+  margin-bottom: 0px;
 }
 
 .actionButton{
@@ -452,34 +495,90 @@
 
 /* HOME INSTITUTO */
 
-.optionsBtn{
-  display: grid;
-  grid-template-columns: 50% 50%;
+.avisoStructure {
   width: 100%;
+  margin-top: 20px;
+}
+
+.nota{
+  color: #333;
+  width: 100%;
+  padding: 10px;
+  background-color:#f6f8fa;
+  border-radius: 10px;
+  border: 1px solid #d8e0e9;
+  margin-top: 20px;
+}
+
+.titleAviso{
+  margin-top: 20px;
+}
+
+.titleAviso span {
+  font-weight: bold;
+}
+
+.titleAviso input{
+  font-size: 16px;
+  margin-left: 10px;
+  width: 280px;
+}
+
+.titleAviso input:focus{
+  outline: 0;
+}
+
+.message{
+  margin-top: 20px;
+}
+
+.optionsBtn{
   border: 1px solid #dee2e7;
   border-radius: 10px;
+  margin-top: 20px;
 }
 
 .optionsBtn a{
+  display: block;
   text-align: center;
-  max-width: 100%;
-  max-height: 100%;
   text-decoration: none;
   font-weight: bolder;
-  font-size: 25px;
-  padding: 40px;
+  font-size: 18px;
+  padding: 20px;
+  color: #312783;
 }
 
-.optionsBtn a:last-child{
+.containerInstituto .home{
+  grid-template-rows: .15fr .1fr 1fr;
+}
+
+.containerInstituto .home .menuOptions {
+  display: grid;
+  grid-template-rows: .5fr 1fr 1fr 1fr;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.containerInstituto .home h1, .containerInstituto .home .avisoStructure h1 {
+  color: rgb(40, 40, 40);
+  font-size: 24px;
+  text-align: center;
+}
+
+.containerInstituto .home .menuOptions a {
+  width: 100%;
+  background-color: #f6f8fa;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.containerInstituto .home .menuOptions a:last-child {
   color: red;
-}
-
-.optionsBtn a:first-child{
-  border-right: 1px solid #dee2e7;
-}
-
-.optionsBtn a img{
-  width: 10%;
 }
 
 @media (min-width: 768px) {
@@ -490,9 +589,6 @@
   .headerInfo {
     display:grid;
     grid-template-columns: 30% 70%;
-  }
-  .fotoynombre picture img{
-    width: 50%;
   }
 
   .home{
@@ -507,12 +603,12 @@
 
  .textarea{
     width: 100%;
-    height: 400px;
+    height: 300px;
     resize: none;
     border: 1px solid #dee2e7;
     border-radius: 10px;
     font-family: 'Inter', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     padding: 10px;
   }
 
@@ -545,4 +641,17 @@
     }
   }
 
+}
+
+@media (min-width: 800px) {
+  .containerHome{
+      display: none;
+  }
+  .containerPc{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-weight: bold;
+  }
 }

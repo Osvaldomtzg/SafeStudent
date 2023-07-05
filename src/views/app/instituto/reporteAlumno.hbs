@@ -1,0 +1,81 @@
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<div class="containerInstituto">
+    <div class="home">
+        <div class="logo logoHomeStudent">
+            <img src="/images/SafeStudentScude.png">
+        </div>
+        <div class="headerInfo">
+            <div class="fotoynombre">
+                <img src="/images/cecyte.png" alt="">
+                <h1>Plantel Huejutla</h1>
+            </div>
+            <div class="infoAlumno">
+                <p class="infoTitle">CLAVE</p>
+                <p class="infoTitle">Region</p>
+                <p class="infoTitle">Estado</p>
+                <p id="semestre">ESP-8266</p>
+                <p id="grupo">5</p>
+                <p id="nocontrol">Hidalgo</p>
+            </div>
+        </div>
+        <div class="avisoStructure">
+            <div class="nota">
+                <p>✅ Nota: El saludo y despedida formal ya lo coloca el sistema por defecto, usted solo deberá de
+                    colocar el mensaje de manera directa. <br><br>
+                    <font color="red">🚧 Advertencia:</font> SafeStudent no puede cancelar el reporte o borrarlo,
+                    envielo cuidadosamente.
+                </p>
+            </div>
+            {{#if success}}
+            <div class="containerInstituto p-4">
+                <div class="row">
+                    <div class="col-md-4 mx-auto">
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            {{success}}
+                            <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close">
+                               
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{/if}}
+            <form action="/instituto/send" method="POST">
+                <div class="row">
+                    <div class="mb-3 mt-4 col-8">
+                        <label for="formGroupExampleInput" class="form-label">Titulo del Reporte</label>
+                        <input type="text" class="form-control" name="titulo" placeholder="" maxlength="36" required>
+                    </div>
+                    <div class="mb-3 mt-4 col">
+                        <label for="formGroupExampleInput" class="form-label">Matricula</label>
+                        <input type="number" class="form-control" name="id_alumno" placeholder="" maxlength="1"
+                            required>
+                    </div>
+                </div>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Contenido del reporte" name="contenido"
+                        style="height: 225px" required></textarea>
+                </div>
+                <div class="d-flex flex-column align-items-center w-100">
+                    <div class="mt-4 w-50">
+                        <button class="btn btn-success" onclick="sweet">
+                            Enviar
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <div class="d-flex flex-column align-items-center w-100">
+                <div class="mt-4 w-50">
+                    <a href="./menu"><button class="btn btn-light">Menú</button></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -1,0 +1,131 @@
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+
+<div class="containerHome">
+    <div class="home">
+        <div class="logo logoHomeStudent">
+            <img src="/images/SafeStudentScude.png">
+        </div>
+        <div class="headerInfo">
+            <div class="fotoynombreStudent">
+                <picture><img
+                        src="https://img.myloview.com/stickers/default-profile-picture-avatar-photo-placeholder-vector-illustration-400-197279432.jpg"
+                        alt=""></picture>
+                <h1 class="nombreEstudiante" id="nombreEstudiante">{{user.nombre}}</h1>
+            </div>
+            <div class="infoAlumno">
+                <p class="infoTitle">Semestre</p>
+                <p class="infoTitle">Grupo</p>
+                <p class="infoTitle">No. Control</p>
+                <p id="semestre">{{user.semestre}}</p>
+                <p id="grupo">{{user.grupo}}</p>
+                <p id="nocontrol">{{user.id_alumno}}</p>
+            </div>
+        </div>
+        <div class="expandibles">
+            <div class="titulo">
+                <h2>Noticias</h2>
+            </div>
+            {{#if avisos}}
+                <div class="cajones">
+                {{#each avisos}}
+                <details close class="{{tipo_aviso}} detailHomeStudent">
+                    <summary id="noticiaTitulo">{{titulo}} 🎉 | Recibido {{timeago fecha_enviada}}</summary>
+                    <p id="noticiaCuerpo">Estimado padre de familia.
+                        <br>
+                        <br>
+                        {{contenido}}
+                        <br>
+                        <br>
+                        {{#ifEquals tipo_aviso "bienvenidaApp" }}
+                        Atentamente,
+                        Equipo de SafeStudent.
+                        {{else}}
+                        Atentamente,
+                        TECNM Plantel Huejutla.
+                        {{/ifEquals}}
+                    </p>
+                </details>
+                {{/each}}
+                </div>
+            {{else}}
+            <div class="cajones">
+                <font color="red"><center><p>Aun no hay avisos</p></center></font>
+            </div>
+            {{/if}}
+
+        </div>
+        <div class="entradasysalidas">
+            <div class="titulo">
+                <h2>Entrada y Salida</h2>
+            </div>
+            <div class="fecha">
+                <p id="current_date">17 de mayo del 2023</p>
+            </div>
+            <div class="infoEntradasySalidas">
+                <div class="entrada">
+                    <div class="tituloCheck">
+                        <h4>Entrada</h4>
+                        {{#if inoutArr.hora_entrada}}
+                        <p id="horaEntrada">{{inoutArr.hora_entrada}} AM</p>
+                        <img src="/images/1yes.png" alt="">
+                        {{else}}
+                        <p id="horaEntrada">Aún no registrado</p>
+                        <img src="/images/1.png" alt="">
+                        {{/if}}
+                    </div>
+                </div>
+                <div class="salida">
+                    <div class="tituloCheck">
+                        <h4>Salida</h4>
+                        {{#if inoutArr.hora_salida}}
+                        <p id="horaSalida">{{inoutArr.hora_salida}} PM</p>
+                        <img src="/images/1yes.png" alt="">
+                        {{else}}
+                        <p id="horaEntrada">Aún no registrado</p>
+                        <img src="/images/1.png" alt="">
+                        {{/if}}
+                    </div>
+                </div>
+            </div>
+            <div class="historialDiv">
+                <a href="/home/historial/entradasysalidas.html" class="historial">Historial</a>
+            </div>
+        </div>
+        <div class="expandibles">
+            <div class="titulo">
+                <h2>Historial Acádemico</h2>
+            </div>
+            <div class="cajones">
+                <details close class="detailHomeStudent">
+                    <summary id="boletaTitulo"><a>Agosto - Diciembre 2022 </a></summary>
+                    
+                </details>
+                <div class="historialDiv">
+                    <a href="/home/historial/boletas.html" class="historial">Historial</a>
+                </div>
+            </div>
+        </div>
+        <div class="logout mt-4">
+            <a href="/logout" class="btn btn-danger">
+                Cerrar Sesión
+            </a>
+        </div>
+    </div>
+
+    <div class="containerPc">
+        <span>🚧 Web aun no disponible para computadora, ingresa desde celular. 🚧</span>
+    </div>
+
+    <script>
+        date = new Date();
+        meses = ['test', 'enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
+        year = date.getFullYear();
+        month = date.getMonth() + 1;
+        day = date.getDate();
+        document.getElementById("current_date").innerHTML = day + " de " + meses[month] + " del " + year;
+
+    </script>

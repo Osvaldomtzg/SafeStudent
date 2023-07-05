@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "safestudent-app",
+  "private_key_id": "c1e6e31de3acd73946690dc166b36bca2e5ea9b8",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDFV6jWTdNAVXGL\njxTpcyx7YsfDJFudsJyBUcdySmL4PUkZDN452L3f6Dg+1LuHEdnuTEltcf61/HYs\n0Ds6T3DTBI1myUlY+4/4ePmFW8/dIicvfbCilQ5Fz5ryqtuIZoKClE5z3CkIfedO\nkULF6xpvxlJeTMEgkM36Ahkhy+0COhL/KUfsMhO+SqB1XO2NP0oo3dEfa0jMpqBL\nrUOVA5mMg8ylIbckue/nndEcn/dGNOrh60r0pLAzJ2LjO4Y/Iy769pr5umyr9Ig0\nxpG1b38RAd/qJuzeHsCrUHq3tda0G1pyh+TQ5VjznIrsUGOM4xa+YmhavxC8hCQ+\nLB7sX5H9AgMBAAECggEAPxlPT+6kfG6VlrUST67W60DjdL78WEhvUl4uspmcWZlm\n9Q6LQ93MoHpk+ZoVuBN6JlrYI5mOguwNcTjHp1ZdUeujttjnjf8pwp4T0pNPvHo+\nI05CG0ojvSird6ov9cYpNs1q5Frh9+gh/Jovyo7o7hJwpdxO6DXE1oqzNH468znE\ns/g6nyI4Mmg3/a/noVOhgWFeDwxgH3esWA9p6X7i+WgzySy6w9ozA1QDv/TFI3cc\nexkiMrR7pTB955OkaaTYPt2+1iUNIat7KZTLKDA0jzpcwsilOBYe3Bx0mcEivqef\nofTh1nhlS4txGaOFBQztKTVi/QYn2SfLC77qZ7RdFQKBgQDlEruDgw8do6WPeNiv\nDcPriSKrXH0wvvS1bNLmNB8EMLT9owJq5XFBgK3SM4FtWhvOZilbD95ZQwCN/HYd\n/FRzttcre/PvfsfMmkCLQmi/E9AB8epeU8CHCsd+4iKT7YkANKlYAGXuVmhyOILL\njCK+R9KT4q6odMQBlR8LNNtj4wKBgQDcihXl197J0sHFR+tGiKEF/fKLb4JqDbjP\nWYLbcXkuWz5kqF9WmY2fGbQVlch7xcJZZ8N8J7B0jiXjyu9Vv84iXbE+swd0KfqM\ngfTVXO8ppUXBg+q0hn3Bx2R1npp/zOhar8VpIzOdb6N65hqM9t5lXL3JXwrpUiz7\nu0Q+3ufYnwKBgQC8qQPkWREe8QNOuVGEQssD9kqmZSL5/ZsevISpcW3GDrNRXWqF\nTXhMYUVHJIJI5HiYMY2H4PbX/xW62p0RLxsCvihSOOD7cyfse3IC/2uzSwb6Qxoq\nG8Ipthf9iRK/UFeP4s9BmfpZI7Mbty0JpN2MZyyn/X6pYJl5UC5kFWFGzwKBgQCZ\nFDgS6/42dNYPS9ZhhSDP+e9LHcGWP6QSOP19uIv2w1rRn5VdlQQadUrs2KTqVOCM\nElw8Z4gxvyFJtmjeSl6YuBP5g2cfGKxSrzn0h6dybse2hQx69geAZBi1E7wGDYMS\nv4L1cXu4Qe9ltSakxg6kqPULO69lOKcErH24bhzb3QKBgQDcPceknKZW59kGmgFk\npXcPW5dpwbwCVfHXlayninCbaFlJ88Eu5x5e45Rw4o5c1xpK7ThYn1ShO71cZSkW\n16WGpXakX9FQ+dT4fU35rygkH4pFzqsbtxd29oWh5kyvi23YmO9Y5z9Lk8jVEJnR\nHxXwV/8CFyG2V4E4ziN7xIi4nQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "safestudent-team@safestudent-app.iam.gserviceaccount.com",
+  "client_id": "111802847910630237487",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/safestudent-team%40safestudent-app.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
