@@ -4,7 +4,7 @@
   "description": "![SafeStudent Version 0.1](https://img.shields.io/badge/version-0.1-brightgreen.svg) ![JavaScript](https://img.shields.io/badge/language-JavaScript-yellow.svg) ![Node.js](https://img.shields.io/badge/language-Node.js-green.svg)",
   "main": "index.js",
   "scripts": {
-    "start": "node src/"
+    "dev": "node src/"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,8 @@
     "express-mysql-session": "^3.0.0",
     "express-session": "^1.17.3",
     "express-validator": "^7.0.1",
+    "google-auth-library": "^8.9.0",
+    "googleapis": "^120.0.0",
     "morgan": "^1.10.0",
     "mysql": "^2.18.1",
     "passport": "^0.6.0",

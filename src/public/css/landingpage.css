@@ -64,6 +64,7 @@
     border: 0px;
     padding: 10px 15px;
     box-shadow: 0 5px 11px rgba(78,56,164,.29);
+    cursor: pointer;
 }
 
 .ingresar{
@@ -100,7 +101,7 @@
 }
 
 .cards .card {
-    background-color: #241a70;
+    background-color: #241a70d8;
     color: #eaeaec;
     font-weight: 100;
     box-shadow: 0 5px 11px rgba(78,56,164,.29);
@@ -192,20 +193,87 @@ ol li:first-child{
     border-bottom: 1px solid #dbdbdb;;
     border-radius: 0px;
 }
-
-.containerPc{
+.pccontainer{
     display: none;
 }
 
 @media (min-width: 800px) {
     .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .actionBtn{
         display: none;
     }
-    .containerPc{
+    .pccontainer .cardinfo{
+        flex-direction: row;
+    }
+    .pccontainer .cardinfo .img1 img{
+        width: 100%;
+        border-radius: 5%;
+        margin-bottom: 0px;
+    }
+    .pccontainer .cardinfo .info1 {
+        padding-left: 35px;
+    }
+    .pccontainer .cardinfo .info1 .actionBtn {
+        display: flex;
+        margin-bottom: 0px;
+        margin-top: 40px;
+        padding:  0px 300px 0px 300px;
+    }
+    .pccontainer{
+        display: flex;
+    }
+    .mobilecontainer{
+        display: none;
+    }
+    .header img{
+        width: 15%;
+    }
+    .ejemplo{
+        display: none;
+    }
+    .infocards .cards{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .infocards h1{
+        padding-top: 40px;
+        text-align: center;
+        color: rgb(12, 12, 12);
+    }
+
+
+    .infocards .cards .card {
+        width: 30%;
+        height: 450px;
+    }
+
+    .padresinfo{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .padresinfo .padres{
+        width: 80%;
+    }
+
+    .clientes .card img{
+        width: 50%;
+    }
+
+    .clientes:nth-child(3) .card img{
+        width: 25%;
+    }
+/*     .containerPc{
         display: flex;
         align-items: center;
         justify-content: center;
         height: 100vh;
         font-weight: bold;
-    }
+    } */
 }

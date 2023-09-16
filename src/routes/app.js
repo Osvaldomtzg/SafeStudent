@@ -12,9 +12,25 @@ const e = require('connect-flash');
 //ABRIR RUTA ESTUDIANTE
 router.get('/student', isLoggedIn, async (req, res)=>{
     let fecha = new Date();
+
+    function formatDate(date) {
+        var d = new Date(date),
+            month = '' + (d.getMonth() + 1),
+            day = '' + d.getDate(),
+            year = d.getFullYear();
+    
+        if (month.length < 2) 
+            month = '0' + month;
+        if (day.length < 2) 
+            day = '0' + day;
+    
+        return [year, month, day].join('-');
+    }
+
     const avisos = await pool.query('SELECT * FROM reportes_avisos WHERE id_alumno = ? OR tipo_aviso = "aviso" OR tipo_aviso = "bienvenidaApp" ORDER BY fecha_enviada DESC ', [req.user.id_alumno]);
-    const inout = await pool.query('SELECT * FROM registros WHERE id_alumno = ? AND fecha = ?', [req.user.id_alumno, fecha]);
+    const inout = await pool.query('SELECT * FROM registros WHERE id_alumno = ? AND fecha = ?', [req.user.id_alumno, formatDate(fecha)]);
     const inoutArr = inout[0];
+    console.log(inoutArr, formatDate(fecha));
 
     const pdfRoute = `${path.join(__dirname, "../")}boletas/${req.user.id_alumno}/2023/Enero-Junio/`;
     res.render('app/padreHome', { avisos: avisos, inoutArr, pdfRoute });
