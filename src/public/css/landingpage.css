@@ -264,11 +264,11 @@ ol li:first-child{
     }
 
     .clientes .card img{
-        width: 50%;
+        width: 40%;
     }
 
-    .clientes:nth-child(3) .card img{
-        width: 25%;
+    .clientes .card:nth-child(3) img{
+        width: 20%;
     }
 /*     .containerPc{
         display: flex;
