@@ -548,6 +548,11 @@ body p {
   color: #312783;
 }
 
+.containerInstituto{
+  display: flex;
+  justify-content: center;
+}
+
 .containerInstituto .home{
   grid-template-rows: .15fr .1fr 1fr;
 }
@@ -583,7 +588,7 @@ body p {
 
 @media (min-width: 768px) {
   .logoHomeStudent img{
-    width: 10%;
+    width: 30%;
     margin-bottom: 20px;
   }
   .headerInfo {
@@ -592,7 +597,8 @@ body p {
   }
 
   .home{
-    grid-template-rows: 20% 5% 80% 5%;
+    grid-template-rows: .2fr .2fr .2fr .2fr .2fr;
+    width: 50%;
   }
 
   .message{
@@ -621,6 +627,16 @@ body p {
     
   }
 
+  .historiales{
+    display: grid !important;
+    height: 100vh;
+    width: 60% !important;
+  }
+
+  .backButton{
+    padding-top: 20px;
+  }
+
   .container{
     display: flex;
     width: 100%;
@@ -640,12 +656,16 @@ body p {
       font-size: 16px;
     }
   }
+  .tituloCheck img{
+    width: 35%;
+  }
 
 }
 
 @media (min-width: 800px) {
   .containerHome{
-      display: none;
+      display: flex;
+      justify-content: center;
   }
   .containerPc{
       display: flex;

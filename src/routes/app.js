@@ -59,6 +59,12 @@ router.post('/instituto/send', isLoggedIn, async (req, res) => {
     if (id_alumno === undefined){
         tipo_aviso = "aviso";
         id_alumno = null;
+
+        /* ENVIA SMS */
+        const telefonos = await pool.query('SELECT telefono FROM padres_tutores');
+        let telefonosFinal = [];
+        telefonos.forEach((telef) => telefonosFinal.push(telef['telefono']));
+        helpers.sendSMS(telefonosFinal, `Estimado padre de familia, ha recibido un nuevo aviso general del CECyTE con el titulo: ${titulo}, para mas informacion ingrese a la plataforma de SafeStudent`);
     }else{
         tipo_aviso = "reporte";
         id_alumno = Number(id_alumno);
@@ -71,12 +77,7 @@ router.post('/instituto/send', isLoggedIn, async (req, res) => {
         id_alumno
     };
     pool.query('INSERT INTO reportes_avisos SET ? ', [newAviso]);
-    /* ENVIA SMS */
-    /*const telefonos = await pool.query('SELECT telefono FROM padres_tutores');
-    let telefonosFinal = [];
-    telefonos.forEach((telef) => telefonosFinal.push(telef['telefono']));
-    helpers.sendSMS(telefonosFinal, `Estimado padre de familia, ha recibido un nuevo aviso general del CECyTE con el titulo: ${titulo}, para mas informacion ingrese a la plataforma de SafeStudent`);*/
-    
+
     if(id_alumno === null) {
         req.flash('success', 'Aviso Enviado correctamente');
         res.redirect('./aviso')

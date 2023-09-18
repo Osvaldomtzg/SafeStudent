@@ -42,8 +42,8 @@ var https = require('https');
 
 helpers.sendSMS = (tel, text, isApiKey=false) => {
 
-  let login = '';
-  passwd = '';
+  let login = 'lahr48390@gmail.com';
+  passwd = 'rya72dmy';
 
   let loginKey = isApiKey ? 'apikey' : 'login';
   let passwordKey = isApiKey ? 'apisecret' : 'passwd';
