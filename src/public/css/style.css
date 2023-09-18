@@ -644,7 +644,7 @@ body p {
     align-content: center;
   }
   .loginBody{
-    background-image: url(/assets/images/FontWeb.png);
+    background-size: auto;
     background-repeat: no-repeat;
     background-position: bottom right;
   }
