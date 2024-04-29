@@ -1,10 +1,10 @@
 module.exports = {
 
     database: {
-        host: '35.235.125.239',
+        host: '',
         user: 'root',
-        password: 'Safestudent01',
-        database: 'safestudentdb',
+        password: '',
+        database: '',
         port: 3306 
     }
 
